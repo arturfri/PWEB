@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Atividade 8 - Pesquisa</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h2 class="title">Resultados</h2>
+        <div class="subcontainer">
+          <div class="container-resultados">
+            <h4>Média de Idades</h4>
+            <p id="media-idades"></p>
+          </div>
+
+          <div class="container-resultados">
+            <h4>Idade da pessoa mais velha</h4>
+            <p id="maior-idade"></p>
+          </div>
+
+          <div class="container-resultados">
+            <h4>Idade pessoa mais nova</h4>
+            <p id="menor-idade"></p>
+          </div>
+
+          <div class="container-resultados">
+            <h4>Quantidade de pessoas que responderam péssimo</h4>
+            <p id="qtd-pessimo"></p>
+          </div>
+
+          <div class="container-resultados">
+            <h4>Porcentagem de respostas positivas (Ótimo ou Bom)</h4>
+            <p id="qtd-bom"></p>
+          </div>
+
+          <div class="container-resultados">
+            <h4>Quantidade de homens que responderam</h4>
+            <p id="respostas-mulheres"></p>
+          </div>
+
+          <div class="container-resultados">
+            <h4>Quantidade de mulheres que responderam</h4>
+            <p id="respostas-homens"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="background-color: #f5f5f5">
+        <h2 class="title">Pesquisa</h2>
+        <div class="subcontainer">
+          <div class="input-container">
+            <label>Idade</label>
+            <input id="age" />
+          </div>
+          <div class="input-container">
+            <label>Sexo</label>
+            <div>
+              <input id="gender" type="radio" name="gender" value="Homem" />
+              <label>Homem</label>
+            </div>
+            <div>
+              <input id="gender" type="radio" name="gender" value="Mulher" />
+              <label>Mulher</label>
+            </div>
+          </div>
+          <div class="input-container">
+            <label>Opnião</label>
+            <div>
+              <input id="opnion" type="radio" name="opnion" value="4" />
+              <label>Ótimo</label>
+            </div>
+            <div>
+              <input id="opnion" type="radio" name="opnion" value="3" />
+              <label>Bom</label>
+            </div>
+            <div>
+              <input id="opnion" type="radio" name="opnion" value="2" />
+              <label>Regular</label>
+            </div>
+            <div>
+              <input id="opnion" type="radio" name="opnion" value="1" />
+              <label>Péssimo</label>
+            </div>
+          </div>
+          <div class="div-button">
+            <button class="save-button" onclick="adicionarPessoa()">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="Pesquisa.js"></script>
+</html>
