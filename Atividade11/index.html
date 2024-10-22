@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+</head>
+<body>
+    <script>
+        const objFunc1 = {
+            matricula: "123432",
+            nome: "Adilson",
+            funcao: "Assistente de RH"
+        };
+
+        const objFunc2 = {};
+        objFunc2.matricula = "231411";
+        objFunc2.nome = "Elaine";
+        objFunc2.funcao = "Gerente de RHf";
+
+        
+        function Funcionario(){
+            var matricula;
+            var nome;
+            var funcao;
+            this.setMatricula = (value) => this.matricula = value;
+            this.getMatricula = () => this.numLab;
+            this.setNome = (value) => this.nome = value;
+            this.getNome = () => this.nome;
+            this.setFuncao = (value) => this.funcao = value;
+            this.getFuncao = () => this.funcao;
+        }
+
+        const objFunc3 = new Funcionario();
+        objFunc3.setMatricula("223132");
+        objFunc3.setNome("Emílio");
+        objFunc3.setFuncao("Auxiliar de RH");
+
+        alert(
+            `Funcionário 1
+            Matrícula: ${objFunc1.matricula}
+            Nome: ${objFunc1.nome}
+            Função: ${objFunc1.funcao}
+            `
+        )
+
+        alert(
+            `Funcionário 2
+            Matrícula: ${objFunc2.matricula}
+            Nome: ${objFunc2.nome}
+            Função: ${objFunc2.funcao}
+            `
+        )
+
+        alert(
+            `Funcionário 3
+            Matrícula: ${objFunc3.getMatricula()}
+            Nome: ${objFunc3.getNome()}
+            Função: ${objFunc3.getFuncao()}
+            `
+        )
+
+
+    </script>
+    
+</body>
+</html>

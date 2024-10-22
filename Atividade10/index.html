@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script>
+        function calcIMC(altura, peso){
+            const imc = peso / Math.pow(altura, 2);
+            if(imc > 40){
+                return {
+                    imc,
+                    classificacao: "Obesidade Grave",
+                    grau: "III",
+                }
+            } else if(imc >= 30){
+                return {
+                    imc,
+                    classificacao: "Obesidade",
+                    grau: "II",
+                }
+            } else if(imc > 25){
+                return {
+                    imc,
+                    classificacao: "Sobrepeso",
+                    grau: "I",
+                }
+            } else if(imc > 18,5){
+                return {
+                    imc,
+                    classificacao: "Normal",
+                    grau: "O",
+                }
+            } else {
+                return {
+                    imc,
+                    classificacao: "Magreza",
+                    grau: "O",
+                }
+            } 
+        }
+
+        const alt = parseFloat(prompt("Insira sua altura (em cm):\n"))/100;
+        const pes = parseFloat(prompt("Insira seu peso (em kg):\n"));
+        const resultado = calcIMC(alt, pes);
+
+        alert(`Seu IMC é ${resultado.imc.toFixed(2)}, com classificação "${resultado.classificacao}" e grau "${resultado.grau}"`);
+    </script>
+    
+</body>
+</html>
