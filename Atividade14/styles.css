@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.content {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.radio-inputs-container{
+    margin: 10px 0;
+}
+
+.radio-input-container {
+    display: flex;
+}
