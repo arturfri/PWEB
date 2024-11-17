@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/to-the-stars/static/css/main.65963020.css",
+    "main.js": "/to-the-stars/static/js/main.57815416.js",
+    "index.html": "/to-the-stars/index.html",
+    "main.65963020.css.map": "/to-the-stars/static/css/main.65963020.css.map",
+    "main.57815416.js.map": "/to-the-stars/static/js/main.57815416.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65963020.css",
+    "static/js/main.57815416.js"
+  ]
+}
