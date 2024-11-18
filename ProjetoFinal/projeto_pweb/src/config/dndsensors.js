@@ -1,11 +1,10 @@
-import { useSensor, useSensors } from "@dnd-kit/core";
 import { MouseSensor, TouchSensor } from "@dnd-kit/core";
 
 const IGNORE_TAGS = ["BUTTON"];
 
 const customHandleEvent = (element) => {
   let cur = element;
-  console.log({cur})
+  
   while (cur) {
     if (IGNORE_TAGS.includes(cur.tagName) || cur.dataset.noDnd) {
       return false;
